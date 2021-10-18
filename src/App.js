@@ -3,6 +3,7 @@ import './App.css';
 import Footer from './Pages/Footer/Footer';
 import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
+import Signin from './Pages/Signin/Signin';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
           </Route>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/signin">
+            <Signin />
           </Route>
         </Switch>
         <Footer />

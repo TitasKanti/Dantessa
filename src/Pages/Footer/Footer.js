@@ -75,7 +75,8 @@ const Footer = () => {
             </div>
 
             <div className="text-center pb-2">
-                <small>© 2021 TK-tech-zone</small>
+                <small className="text-blue-600"><i><a href="http://www.freepik.com">Logos and images sourced from Freepik</a></i></small> <br />
+                <small>© 2021 TK-tech-zone/Dantessa</small>
             </div>
         </>
     );
