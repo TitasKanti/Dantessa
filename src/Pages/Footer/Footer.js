@@ -5,13 +5,13 @@ import icon from '../../Images/Icons/icon2.png'
 const Footer = () => {
     return (
         <>
-            <div className="py-8 w-full">
+            <div className="py-8 w-full mt-10">
                 <div className="container mx-auto px-8">
                     <div className="table w-full ">
                         <div className="h-10 w-10 self-center mr-2 flex flex-row">
                             <img src={icon} alt="icon" />
 
-                            <Link to="/home" className="text-3xl no-underline text-grey-darkest hover:text-blue-dark font-sans font-bold">Dantessa</Link><br />
+                            <Link to="/home" className="text-3xl no-underline text-grey-darkest hover:text-blue-dark font-sans font-bold">Dentessa</Link><br />
                         </div>
 
                         <div className="block sm:table-cell">

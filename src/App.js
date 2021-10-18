@@ -4,6 +4,8 @@ import Footer from './Pages/Footer/Footer';
 import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
 import Signin from './Pages/Signin/Signin';
+import SignOut from './Pages/SignOut/SignOut';
+import SignUp from './Pages/SignUp/SignUp';
 
 function App() {
   return (
@@ -19,6 +21,12 @@ function App() {
           </Route>
           <Route path="/signin">
             <Signin />
+          </Route>
+          <Route path="/signUp">
+            <SignUp />
+          </Route>
+          <Route path="/signOut">
+            <SignOut />
           </Route>
         </Switch>
         <Footer />

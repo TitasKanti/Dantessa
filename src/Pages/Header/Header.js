@@ -13,7 +13,7 @@ const Header = () => {
             <img src={icon} alt="icon" />
           </div>
           <div>
-            <NavLink to="/home" className="text-2xl no-underline text-grey-darkest hover:text-blue-dark font-sans font-bold">Dantessa</NavLink><br />
+            <NavLink to="/home" className="text-2xl no-underline text-grey-darkest hover:text-blue-dark font-sans font-bold">Dentessa</NavLink><br />
           </div>
         </div>
 
