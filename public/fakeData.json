@@ -3,72 +3,84 @@
         "id": 1,
         "name": "Pediactric Dentistry",
         "img": "https://image.freepik.com/free-photo/little-boy-patient-dentist_1303-24383.jpg",
-        "description": "To keep your teeth healthy this checkp up is very handy"
+        "description": "To keep your teeth healthy this checkp up is very handy",
+        "detail": "To keep your teeth healthy this checkp up is very handy. We do deep diagnosis and several stage necessary lab tests with great care. We have the best equipments for this work.We are doing this with good quality and less price."
     },
     {
         "id": 2,
         "name": "Deep Cleaning",
         "img": "https://image.freepik.com/free-photo/woman-shows-thumb-up-sitting-with-stomatologist-dentist-office_8353-1658.jpg",
-        "description": "To recover your teeth youth this is what you need badly"
+        "description": "To recover your teeth youth this is what you need badly",
+        "detail": "To keep your teeth healthy this checkp up is very handy. We do deep diagnosis and several stage necessary lab tests with great care. We have the best equipments for this work.We are doing this with good quality and less price."
     },
     {
         "id": 3,
         "name": "Dental Implants",
         "img": "https://image.freepik.com/free-vector/flat-dentist-elements-set_98292-3072.jpg",
-        "description": "To recover from various bacteria attacks your teeth need this"
+        "description": "To recover from various bacteria attacks your teeth need this",
+        "detail": "To keep your teeth healthy this checkp up is very handy. We do deep diagnosis and several stage necessary lab tests with great care. We have the best equipments for this work.We are doing this with good quality and less price."
     },
     {
         "id": 4,
         "name": "Teeth Whitening",
         "img": "https://image.freepik.com/free-photo/little-beautiful-girl-dentist-smiling_158595-7736.jpg",
-        "description": "Your teeth need this to get the early days white look"
+        "description": "Your teeth need this to get the early days white look",
+        "detail": "To keep your teeth healthy this checkp up is very handy. We do deep diagnosis and several stage necessary lab tests with great care. We have the best equipments for this work.We are doing this with good quality and less price."
     },
     {
         "id": 5,
         "name": "Orthodontics",
         "img": "https://image.freepik.com/free-photo/dentist-discussing-with-patient-x-ray-report_107420-65664.jpg",
-        "description": "This sort of investigation will get the inner news of your teeth and can diagnosis cleanly"
+        "description": "This sort of investigation will get the inner news of your teeth and can diagnosis cleanly",
+        "detail": "To keep your teeth healthy this checkp up is very handy. We do deep diagnosis and several stage necessary lab tests with great care. We have the best equipments for this work.We are doing this with good quality and less price."
     },
     {
         "id": 6,
         "name": "3D Dental Scanner",
         "img": "https://image.freepik.com/free-photo/equipment-dental-instruments-dentist-s-office-tools-close-up_8353-1672.jpg",
-        "description": "This machine can work so efficiently that can make your teeth live again"
+        "description": "This machine can work so efficiently that can make your teeth live again",
+        "detail": "To keep your teeth healthy this checkp up is very handy. We do deep diagnosis and several stage necessary lab tests with great care. We have the best equipments for this work.We are doing this with good quality and less price."
     },
     {
         "id": 7,
         "name": "Digital Smile Design",
         "img": "https://image.freepik.com/free-photo/dentist-with-smile_144627-886.jpg",
-        "description": "We help to re-design your smile and create a customised smile for your face!"
+        "description": "We help to re-design your smile and create a customised smile for your face!",
+        "detail": "To keep your teeth healthy this checkp up is very handy. We do deep diagnosis and several stage necessary lab tests with great care. We have the best equipments for this work.We are doing this with good quality and less price."
     },
     {
         "id": 8,
         "name": "Dental Braces",
         "img": "https://image.freepik.com/free-photo/girl-with-braces-during-routine-dental-examination_329181-17710.jpg",
-        "description": "Don’t worry about irregular teeth. You will smile again confidently with straight teeth."
+        "description": "Don’t worry about irregular teeth. You will smile again confidently with straight teeth.",
+        "detail": "To keep your teeth healthy this checkp up is very handy. We do deep diagnosis and several stage necessary lab tests with great care. We have the best equipments for this work.We are doing this with good quality and less price."
     },
     {
         "id": 9,
         "name": "Root Canal Treatment",
         "img": "https://image.freepik.com/free-vector/healthy-teeth-dental-implant-implant-tooth-health-tooth-medical-dentistry-vector-illustration_1284-46134.jpg",
-        "description": "No more 3-5 days for Root Canal Treatment. We are offering single appointment Root Canal Treatment !"
+        "description": "No more 3-5 days for Root Canal Treatment. We are offering single appointment Root Canal Treatment !",
+        "detail": "To keep your teeth healthy this checkp up is very handy. We do deep diagnosis and several stage necessary lab tests with great care. We have the best equipments for this work.We are doing this with good quality and less price."
     },
     {
         "id": 10,
         "name": "Gum Color Change",
         "img": "https://image.freepik.com/free-photo/interior-modern-equipped-dental-office-with-x-ray-monitors-dentist-stomatology-orthodontic-workplace_482257-2309.jpg",
-        "description": "Transform you blackish gum to pinkish colour with painless, single appointment Laser Gum Treatment!"
+        "description": "Transform you blackish gum to pinkish colour with painless, single appointment Laser Gum Treatment!",
+        "detail": "To keep your teeth healthy this checkp up is very handy. We do deep diagnosis and several stage necessary lab tests with great care. We have the best equipments for this work.We are doing this with good quality and less price."
     },
     {
         "id": 11,
         "name": "Ceramic Crown",
         "img": "https://image.freepik.com/free-photo/photo-smiling-dentist-standing-with-arms-crossed-with-her-colleague-showing-okay-sign_496169-1043.jpg",
-        "description": "Get the taste of world’s most advanced, full computerised, CAD-CAM fabricated Ceramic Crown."
+        "description": "Get the taste of world’s most advanced, full computerised, CAD-CAM fabricated Ceramic Crown.",
+        "detail": "To keep your teeth healthy this checkp up is very handy. We do deep diagnosis and several stage necessary lab tests with great care. We have the best equipments for this work.We are doing this with good quality and less price."
     },
     {
         "id": 12,
         "name": "Veneer",
         "img": "https://image.freepik.com/free-photo/beautiful-girl-sitting-dentist-s-office_1157-23491.jpg",
-        "description": "Transform your smile with minimally invasive Veneer treatment !"
+        "description": "Transform your smile with minimally invasive Veneer treatment !",
+        "detail": "To keep your teeth healthy this checkp up is very handy. We do deep diagnosis and several stage necessary lab tests with great care. We have the best equipments for this work.We are doing this with good quality and less price."
     }
 ]
