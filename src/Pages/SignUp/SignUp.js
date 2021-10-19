@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import useFirebase from '../../hooks/useFirebase';
 
 const Copyright = (props) => {
     return (
@@ -30,6 +31,11 @@ const theme = createTheme();
 
 
 const SignUp = () => {
+    const { signInByGoogle } = useFirebase();
+
+    const handleGoogleSignIn = () => {
+        signInByGoogle();
+    }
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -121,6 +127,7 @@ const SignUp = () => {
                             </Button>
                             <div>-------------- or --------------</div>
                             <Button
+                                onClick={handleGoogleSignIn}
                                 type="submit"
                                 fullWidth
                                 variant="contained"

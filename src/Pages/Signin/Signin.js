@@ -33,6 +33,7 @@ const theme = createTheme();
 
 
 const Signin = () => {
+
     const { signInByGoogle } = useFirebase();
 
     const handleGoogleSignIn = () => {
@@ -42,14 +43,14 @@ const Signin = () => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
         // eslint-disable-next-line no-console
-        /* console.log({
+        console.log({
             email: data.get('email'),
             password: data.get('password'),
-        }); */
+        });
     };
 
     return (
-        <div className="mb-10">
+        <div className="mb-20">
             <ThemeProvider theme={theme}>
                 <Grid container component="main" sx={{ height: '100vh' }}>
                     <CssBaseline />
@@ -109,7 +110,6 @@ const Signin = () => {
                                     label="Remember me"
                                 />
                                 <Button
-                                    onClick=""
                                     type="submit"
                                     fullWidth
                                     variant="contained"
