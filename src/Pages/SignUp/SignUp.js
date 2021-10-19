@@ -12,7 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
 
 const Copyright = (props) => {
     return (
@@ -31,7 +31,7 @@ const theme = createTheme();
 
 
 const SignUp = () => {
-    const { signInByGoogle } = useFirebase();
+    const { createNewUser, signInByGoogle } = useAuth();
 
     const handleGoogleSignIn = () => {
         signInByGoogle();
@@ -39,6 +39,7 @@ const SignUp = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        createNewUser();
         const data = new FormData(event.currentTarget);
         // eslint-disable-next-line no-console
         console.log({
@@ -123,7 +124,7 @@ const SignUp = () => {
                                 variant="contained"
                                 sx={{ mt: 3, mb: 2 }}
                             >
-                                Sign In
+                                Sign Up
                             </Button>
                             <div>-------------- or --------------</div>
                             <Button

@@ -11,8 +11,8 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import useFirebase from '../../hooks/useFirebase';
 import { Container } from '@mui/material';
+import useAuth from '../../hooks/useAuth';
 
 const Copyright = (props) => {
 
@@ -34,13 +34,14 @@ const theme = createTheme();
 
 const Signin = () => {
 
-    const { signInByGoogle } = useFirebase();
+    const { signInByEmailPassword, signInByGoogle } = useAuth();
 
     const handleGoogleSignIn = () => {
         signInByGoogle();
     }
     const handleSubmit = (event) => {
         event.preventDefault();
+        signInByEmailPassword();
         const data = new FormData(event.currentTarget);
         // eslint-disable-next-line no-console
         console.log({

@@ -2,8 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 import icon from '../../Images/Icons/icon2.png'
+import useAuth from '../../hooks/useAuth';
 
 const Header = () => {
+  const { user, logOut } = useAuth();
   return (
     <div>
       <nav className="font-sans flex flex-col text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 bg-white shadow sm:items-baseline w-full">
@@ -28,9 +30,13 @@ const Header = () => {
           <NavLink to="/services" activeStyle={{ fontWeight: "bold", color: "blue" }} className="text-md no-underline text-grey-darker ml-3 px-1">Services</NavLink>
 
           <NavLink to="/news" activeStyle={{ fontWeight: "bold", color: "blue" }} className="text-md no-underline text-grey-darker ml-3 px-1">News</NavLink>
-
-          <NavLink to="/signin" activeStyle={{ fontWeight: "bold", color: "blue" }} className="text-md no-underline text-grey-darker ml-3 px-1">Sign-In</NavLink>
-
+          <span className="text-blue-700 mx-3"> {user.displayName} </span>
+          {
+            user.email ?
+              <button className="text-red-700" onClick={logOut}>Sign-Out</button>
+              :
+              <NavLink to="/signin" activeStyle={{ fontWeight: "bold", color: "blue" }} className="text-md no-underline text-grey-darker ml-3 px-1">Sign-In</NavLink>
+          }
 
 
         </div>
