@@ -5,7 +5,6 @@ import Footer from './Pages/Footer/Footer';
 import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
 import Signin from './Pages/Signin/Signin';
-import SignOut from './Pages/SignOut/SignOut';
 import SignUp from './Pages/SignUp/SignUp';
 
 function App() {
