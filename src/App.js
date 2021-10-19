@@ -1,9 +1,11 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './Context/AuthProvider';
+import About from './Pages/About/About';
 import Footer from './Pages/Footer/Footer';
 import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
+import Service from './Pages/Service/Service';
 import Signin from './Pages/Signin/Signin';
 import SignUp from './Pages/SignUp/SignUp';
 
@@ -26,6 +28,13 @@ function App() {
             <Route path="/signUp">
               <SignUp />
             </Route>
+            <Route path="/service">
+              <Service />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+
           </Switch>
           <Footer />
         </Router>
