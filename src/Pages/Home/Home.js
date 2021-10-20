@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router';
 import Service from '../Service/Service';
-import image from '../../Images/Carousel-items/banner3.png'
-import Box from '@mui/material/Box';
+import image from '../../Images/Carousel-items/dentist-with-smile.jpg'
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -26,7 +25,7 @@ const Home = () => {
     return (
         <>
             {/* extra-section */}
-            <div className="md:flex justify-around items-center  bg-yellow-50 px-5 py-10">
+            <div className="grid md:grid-cols-2 justify-between items-center gap-4 bg-yellow-50 px-5 py-10">
                 <div>
                     <img className="rounded-md" src={image} alt="" />
                 </div>
