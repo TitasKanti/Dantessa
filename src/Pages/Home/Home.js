@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router';
 import Service from '../Service/Service';
-import image from '../../Images/Carousel-items/dentist-with-smile.jpg'
+import image from '../../Images/Carousel-items/dentist-with-smile-min.png'
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -26,7 +26,6 @@ const Home = () => {
 
     return (
         <>
-
             <div>
                 <Carousel>
                     <Carousel.Item>
