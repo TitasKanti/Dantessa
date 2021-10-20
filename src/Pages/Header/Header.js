@@ -29,7 +29,7 @@ const Header = () => {
 
           <NavLink to="/allServices" activeStyle={{ fontWeight: "bold", color: "blue" }} className="text-md no-underline text-grey-darker ml-3 px-1">Services</NavLink>
 
-          <NavLink to="/news" activeStyle={{ fontWeight: "bold", color: "blue" }} className="text-md no-underline text-grey-darker ml-3 px-1">News</NavLink>
+          <NavLink to="/reviews" activeStyle={{ fontWeight: "bold", color: "blue" }} className="text-md no-underline text-grey-darker ml-3 px-1">Reviews</NavLink>
           <span className="text-blue-700 mx-3"> {user.displayName} </span>
           {
             user.email ?

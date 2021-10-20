@@ -9,6 +9,7 @@ import Doctors from './Pages/Home/Doctors/Doctors';
 import Home from './Pages/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+import Reviews from './Pages/Reviews/Reviews';
 import ServiceDetail from './Pages/ServiceDetail/ServiceDetail';
 import Signin from './Pages/Signin/Signin';
 import SignUp from './Pages/SignUp/SignUp';
@@ -44,6 +45,9 @@ function App() {
             </PrivateRoute>
             <Route path="/doctors">
               <Doctors />
+            </Route>
+            <Route path="/reviews">
+              <Reviews />
             </Route>
             <Route path="*">
               <NotFound />
