@@ -42,7 +42,7 @@ const Home = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://image.freepik.com/free-vector/realistic-dental-care-landing-page_23-2148984576.jpg"
+                            src="https://image.freepik.com/free-vector/dental-hygiene-landing-page-template-with-doctor-girl-patient_107791-5855.jpg"
                             alt="Second slide"
                         />
 
