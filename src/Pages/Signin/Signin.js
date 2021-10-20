@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -35,9 +35,15 @@ const theme = createTheme();
 const Signin = () => {
 
     const { signInByEmailPassword, signInByGoogle } = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/home';
 
     const handleGoogleSignIn = () => {
-        signInByGoogle();
+        signInByGoogle()
+            .then(result => {
+                history.push(redirect_uri);
+            })
     }
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -57,7 +63,7 @@ const Signin = () => {
                     <CssBaseline />
                     <Box
                         sx={{
-                            marginTop: 8,
+                            marginTop: 2,
                             display: 'flex',
                             flexDirection: 'column',
                             alignItems: 'center',

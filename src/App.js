@@ -7,6 +7,7 @@ import Footer from './Pages/Footer/Footer';
 import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Service from './Pages/Service/Service';
 import ServiceDetail from './Pages/ServiceDetail/ServiceDetail';
 import Signin from './Pages/Signin/Signin';
@@ -31,15 +32,15 @@ function App() {
             <Route path="/signUp">
               <SignUp />
             </Route>
-            <Route path="/allServices">
+            <PrivateRoute path="/allServices">
               <AllServices />
-            </Route>
+            </PrivateRoute>
             <Route path="/about">
               <About />
             </Route>
-            <Route path="/serviceDetail/:id">
+            <PrivateRoute path="/serviceDetail/:id">
               <ServiceDetail />
-            </Route>
+            </PrivateRoute>
             <Route path="*">
               <NotFound />
             </Route>

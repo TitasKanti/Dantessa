@@ -8,6 +8,7 @@ initializeAuthentication();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
+    const [isLoading, setIsLoading] = useState(true)
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -16,12 +17,9 @@ const useFirebase = () => {
     const googleProvider = new GoogleAuthProvider();
 
     const signInByGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                setUser(result.user);
-            })
-
-
+        setIsLoading(true);
+        return signInWithPopup(auth, googleProvider)
+            .finally(() => setIsLoading(false));
     }
 
     const createNewUser = () => {
@@ -57,14 +55,17 @@ const useFirebase = () => {
             else {
                 setUser({})
             }
+            setIsLoading(false);
             return () => unsubscribed;
         })
     }, [])
 
 
     const logOut = () => {
+        setIsLoading(true);
         signOut(auth)
             .then(() => { })
+            .finally(() => setIsLoading(false));
     }
 
     return {
@@ -72,7 +73,8 @@ const useFirebase = () => {
         signInByGoogle,
         signInByEmailPassword,
         createNewUser,
-        logOut
+        logOut,
+        isLoading
     }
 };
 
