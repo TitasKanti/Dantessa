@@ -22,26 +22,18 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
-    //material ui component
-    const bull = (
-        <Box
-            component="span"
-            sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-        >
-            •
-        </Box>
-    );
+
     return (
         <>
             {/* extra-section */}
-            <div className="md:flex justify-center items-center gap-4 bg-yellow-100 px-5 py-10">
+            <div className="md:flex justify-around items-center  bg-yellow-50 px-5 py-10">
                 <div>
                     <img className="rounded-md" src={image} alt="" />
                 </div>
                 <div className="text-blue-900 text-justify">
-                    <h1 className="text-5xl mb-2">Your smile is our promise</h1>
+                    <h1 className="text-4xl mb-2">Your smile is our promise</h1>
                     <div className="md:ml-4">
-                        <li>To maintain a sweet smile you need to do some regular check up and follow up.</li>
+                        <li>Do some regular check up.</li>
                         <li>Clean your teeth in every six months</li>
                         <li>Deap cleaning your teeth can be very effective</li>
                         <li>We have Dental Implant package for you</li>
@@ -49,21 +41,23 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
             {/* extra section 2 */}
+
             <div className="md:flex justify-center gap-4 bg-gray-100 py-4">
                 <Card sx={{ minWidth: 275 }}>
                     <CardContent>
                         <Typography sx={{ fontSize: 18 }} color="text.secondary" gutterBottom>
                             Get Appointment
                         </Typography>
-
+                        <br />
                         <Typography sx={{ fontSize: 14 }} color="text.secondary">
                             We put your smile at our priority <br />
                             visit us, get your problem solved
                         </Typography>
                         <br />
                         <Typography variant="h8" component="div">
-                            come first, served first
+                            Come First, Served First
                         </Typography>
 
                     </CardContent>
@@ -115,12 +109,9 @@ const Home = () => {
                                         Closed
                                     </td>
                                 </tr>
-
                             </tbody>
                         </table>
-
                     </CardContent>
-
                 </Card>
 
                 <Card sx={{ minWidth: 275 }}>
@@ -144,7 +135,10 @@ const Home = () => {
                     </CardActions>
                 </Card>
             </div>
-            <div className=" pt-5 py-10 px-2 leading-8">
+
+            {/* Dental Services route */}
+
+            <div className=" pt-5 py-10 px-2 leading-8 bg-green-50">
                 <h2 className="text-3xl font-bold text-blue-500">Dental Services</h2>
                 <p className="">Our Range of Dental Care Services</p>
 
@@ -162,6 +156,8 @@ const Home = () => {
 
                 </div>
             </div>
+
+
         </>
     );
 };
