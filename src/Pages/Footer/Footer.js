@@ -11,7 +11,7 @@ const Footer = () => {
                         <div className="h-10 w-10 self-center mr-2 flex flex-row">
                             <img src={icon} alt="icon" />
 
-                            <Link to="/home" className="text-3xl no-underline text-grey-darkest hover:text-blue-dark font-sans font-bold">Dentessa</Link><br />
+                            <Link to="/home" className="md:text-3xl no-underline text-grey-darkest hover:text-blue-dark font-sans font-bold">Dentessa</Link><br />
                         </div>
 
                         <div className="block sm:table-cell">
