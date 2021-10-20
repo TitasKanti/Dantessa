@@ -5,6 +5,7 @@ import About from './Pages/About/About';
 import AllServices from './Pages/AllServices/AllServices';
 import Footer from './Pages/Footer/Footer';
 import Header from './Pages/Header/Header';
+import Doctors from './Pages/Home/Doctors/Doctors';
 import Home from './Pages/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
@@ -12,6 +13,7 @@ import Service from './Pages/Service/Service';
 import ServiceDetail from './Pages/ServiceDetail/ServiceDetail';
 import Signin from './Pages/Signin/Signin';
 import SignUp from './Pages/SignUp/SignUp';
+
 
 function App() {
   return (
@@ -41,6 +43,9 @@ function App() {
             <PrivateRoute path="/serviceDetail/:id">
               <ServiceDetail />
             </PrivateRoute>
+            <Route path="/doctors">
+              <Doctors />
+            </Route>
             <Route path="*">
               <NotFound />
             </Route>

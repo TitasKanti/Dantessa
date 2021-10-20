@@ -7,6 +7,8 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Carousel } from 'react-bootstrap';
+import Doctors from './Doctors/Doctors';
 
 const Home = () => {
     const [services, setServices] = useState([]);
@@ -24,6 +26,45 @@ const Home = () => {
 
     return (
         <>
+
+            <div>
+                <Carousel>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src="https://image.freepik.com/free-psd/dentist-dental-care-social-media-banner-template_120329-1308.jpg"
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src="https://image.freepik.com/free-vector/realistic-dental-care-landing-page_23-2148984576.jpg"
+                            alt="Second slide"
+                        />
+
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src="https://image.freepik.com/free-psd/dentist-health-care-social-media-banner-template_202595-468.jpg"
+                            alt="Third slide"
+                        />
+
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+            </div>
+
+
             {/* extra-section */}
             <div className="grid md:grid-cols-2 justify-between items-center gap-4 bg-yellow-50 px-5 py-10">
                 <div>
@@ -155,7 +196,9 @@ const Home = () => {
 
                 </div>
             </div>
-
+            <div>
+                <Doctors />
+            </div>
 
         </>
     );
